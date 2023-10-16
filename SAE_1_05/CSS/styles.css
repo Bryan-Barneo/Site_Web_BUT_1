@@ -1,0 +1,67 @@
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /*background: linear-gradient(#87CEFA, black);*/
+}
+/* ############################################## */
+/* #                    NAV                     # */
+/* ############################################## */
+nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+nav div a{
+    font-size: 120%;
+}
+nav>div{
+    background-color: #5BBDBF;
+    position: relative;
+    align-items: center;
+    align-self: flex-end;
+    height: 100%;
+}
+nav>div>a{
+    padding:0 20px 0 20px;
+    border-left: solid black 2px;
+}
+nav>div:first-child a{
+    border-left: none;
+}
+.submenu{
+    padding: 0px 20px;
+    width: 59%;
+    top: 100%;
+    display: none;
+    position:absolute;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    background-color: #aca;
+}
+nav div:hover > .submenu{
+    display: block;
+}
+/* ############################################## */
+/* #                   LIENS                    # */
+/* ############################################## */
+a{text-decoration: none;}
+a:visited{color: #0088FF;}
+a:hover{color: orange;}
+/* ############################################## */
+/* #                   MAIN                     # */
+/* ############################################## */
+.TitrePrincipale{
+    margin-top: 1%;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
