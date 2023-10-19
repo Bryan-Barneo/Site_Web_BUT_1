@@ -1,67 +1,211 @@
-html{
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
+/* ############################################## */
+/* #                    FONT                    # */
+/* ############################################## */
+@font-face {
+    font-family: BerkshireSwash;
+    src: url("../CSS/Font/BerkshireSwash-Regular.ttf");
 }
-body{
-    margin: 0;
-    padding: 0;
-    /*background: linear-gradient(#87CEFA, black);*/
+@font-face {
+    font-family: CourgetteRegular;
+    src: url("../CSS/Font/Courgette-Regular.ttf");
+}
+/* ############################################## */
+/* #                   HTML                     # */
+/* ############################################## */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto;
+    padding: 0px;
+    background: linear-gradient(#F3732F, #893508);
+}
+/* ############################################## */
+/* #                   HEADER                   # */
+/* ############################################## */
+header {
+    display: flex;
+    align-items: stretch;
+    padding: 0% 10%;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
 }
 /* ############################################## */
 /* #                    NAV                     # */
 /* ############################################## */
-nav{
+nav div a {
+    font-size: 120%;
+}
+
+nav div div div a {
+    font-size: 85%;
+}
+
+nav {
     display: flex;
-    position: absolute;
+    position: sticky;
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    align-content: center;
 }
-nav div a{
+
+nav div a {
     font-size: 120%;
 }
-nav>div{
-    background-color: #5BBDBF;
+
+nav>div {
     position: relative;
     align-items: center;
     align-self: flex-end;
     height: 100%;
 }
-nav>div>a{
-    padding:0 20px 0 20px;
+
+nav > div > a {
+    padding: 0 20px 0 20px;
     border-left: solid black 2px;
 }
-nav>div:first-child a{
+
+nav > div:first-child a {
     border-left: none;
 }
-.submenu{
+
+.submenu {
     padding: 0px 20px;
     width: 59%;
     top: 100%;
     display: none;
-    position:absolute;
+    position: absolute;
     border-left: solid 1px;
     border-right: solid 1px;
-    background-color: #aca;
+    background-color: lightyellow;
 }
-nav div:hover > .submenu{
+
+nav div a:hover{
+    color: red;
+}
+
+nav div:hover > .submenu {
     display: block;
+}
+
+nav>div:hover{
+    background-color: lightyellow;
+}
+
+nav div div{
+    padding: 15px 0;
 }
 /* ############################################## */
 /* #                   LIENS                    # */
 /* ############################################## */
-a{text-decoration: none;}
-a:visited{color: #0088FF;}
-a:hover{color: orange;}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+.submenu a{
+    color: black;
+}
 /* ############################################## */
 /* #                   MAIN                     # */
 /* ############################################## */
-.TitrePrincipale{
+.remonté {
+    display: flex;
+    bottom: 5%;
+    position: fixed;
+}
+
+.TitrePrincipale {
     margin-top: 1%;
     font-size: 500%;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-family: BerkshireSwash, sans-serif;
+    background-image: url("../CSS/Images/Kadatras.png");
+    background-size: 100%;
+    background-position: center;
+    color: white;
+    opacity: 0.8;
+}
+
+main div p{
+text-align: center
+}
+
+p{
+    font-family: CourgetteRegular;
+    font-size: 16px;
+    text-indent: 5px; margin: 30px 0;
+}
+
+/* ############################################## */
+/* #                ARTICLE                     # */
+/* ############################################## */
+article div img{
+    height: 300px;
+    float: right;
+    margin-right: 5px;
+}
+/* ############################################## */
+/* #                 BUTTON                     # */
+/* ############################################## */
+button{
+    margin-left: 19px;
+    padding: 9px 25px;
+    background-color:rgba(0, 0, 0, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0,0,0,0.5);
+    cursor: hand;
+}
+/* ############################################## */
+/* #                 FOOTER                     # */
+/* ############################################## */
+footer {
+    margin-top: 5%;
+    font-weight: bold;
+    padding: 1%;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer div {
+    padding-bottom: 0.3%;
+    display: flex;
+    justify-content: center;
 }
