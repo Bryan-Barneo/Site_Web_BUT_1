@@ -50,7 +50,7 @@ nav div div div a {
 
 nav {
     display: flex;
-    position: sticky;
+    position: absolute;
     align-items: center;
     flex-direction: row;
     justify-content: center;
