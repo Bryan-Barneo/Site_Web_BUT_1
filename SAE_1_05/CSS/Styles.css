@@ -23,7 +23,7 @@ html {
 body {
     margin: auto;
     padding: 0px;
-    background: linear-gradient(white, #893508);
+    background: linear-gradient(#F58A51, #441B04);
 }
 /* ############################################## */
 /* #                   HEADER                   # */
@@ -159,6 +159,13 @@ div:hover > .submenu a{
 }
 .container .ImageEtape img{
     padding: 20px;
+    max-width: 600px;
+    min-width: 700px;
+}
+
+.ImageMD{
+    width: 50%;
+    height: 50%;
 }
 /* ############################################## */
 /* #                   LIENS                    # */
@@ -187,12 +194,13 @@ a:hover {
 /* #                  ARTICLE                   # */
 /* ############################################## */
 .container{
-    background-color: mistyrose;
+    background-color: black;
     display: flex;
     flex-direction: row;
     margin-bottom: 10%;
     width: 90%;
     align-items: center;
+    box-shadow: 0 5px 15px white;
 }
 .container:hover{
     border: white 10px solid;
@@ -225,6 +233,10 @@ h2{
 }
 .TextEtape h2{
     text-align: center;
+    color: white;
+}
+.container:hover .TextEtape h2{
+    color: black;
 }
 /* ############################################## */
 /* #                   TEXTE                    # */
@@ -234,10 +246,19 @@ p{
     font-size: 20px;
     text-indent: 5px; margin: 30px 0;
     text-align: justify;
+    padding: 20px;
+    color: white;
+}
+#ModaliteEG p{
+    color: black;
 }
 #Synopsis p{
     text-align: center;
     font-size: 25px;
+    color: black;
+}
+.container:hover p{
+    color: black;
 }
 /* ############################################## */
 /* #                   MAIN                     # */
@@ -252,6 +273,24 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+.Modalite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+}
+
+#ModaliteEG p{
+    font-size: 25px;
+}
+
+#ModaliteEG p:first-child{
+    text-align: center;
+    font-family: CourgetteRegular;
+    font-style: oblique;
+    font-size: 40px;
 }
 /* ############################################## */
 /* #                 BUTTON                     # */
