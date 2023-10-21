@@ -112,7 +112,7 @@ nav > div {
     padding: 0;
     margin: 0;
 }
-
+/*
 nav div:hover .submenu{
     display: flex;
     flex-direction: column;
@@ -134,7 +134,7 @@ nav > div  a:hover {
     flex-direction: column;
     align-items: center;
     padding: 5px 0;
-    /*clear: both;*/
+    /*clear: both;*//*
     width: auto;
 }
 
@@ -155,7 +155,67 @@ div:hover > .submenu{
 div:hover > .submenu a{
     display: block;
     padding: 12px 16px;
+}*/
+nav div:hover .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
+
+nav > div a {
+    border: transparent 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav > div  a:hover {
+    border: pink 1px solid;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+/*.menu > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+    /*clear: both;*//*
+    width: auto;
+}*/
+
+.menu{
+    top:95%;
+    display: none;
+    position: absolute;
+    background: #000;
+    min-width: 10%;
+    box-shadow: 0px 0px 15px white;   
+    z-index: 1;
+}
+
+div:hover > .menu{
+    display: block;
+}
+
+div:hover > .menu a{
+    display: block;
+    padding: 12px 16px;
+}
+
+.submenu{
+    top: 0;
+    left:100%; 
+    display: none;
+    position: absolute;
+    background: #000;
+    min-width: 10%;
+    box-shadow: 0px 0px 15px white;   
+    z-index: 2;
+}
+
+div:hover > .submenu{
+    display: block;
+}
+
 /* ############################################## */
 /* #                   IMAGES                   # */
 /* ############################################## */
@@ -210,9 +270,9 @@ a:hover {
     color: black;
 }*/
 
-.submenu div a:hover{
+/*.submenu div a:hover{
     color: red;
-}
+}*/
 /* ############################################## */
 /* #                  ARTICLE                   # */
 /* ############################################## */
