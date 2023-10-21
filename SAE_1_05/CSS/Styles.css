@@ -23,7 +23,7 @@ html {
 body {
     margin: auto;
     padding: 0px;
-    background: linear-gradient(white, #893508);
+    background: linear-gradient(#F58A51, #441B04);
 }
 /* ############################################## */
 /* #                   HEADER                   # */
@@ -175,12 +175,13 @@ a:hover {
 /* #                  ARTICLE                   # */
 /* ############################################## */
 .container{
-    background-color: mistyrose;
+    background-color: black;
     display: flex;
     flex-direction: row;
     margin-bottom: 100px;
     width: 90%;
     align-items: center;
+    box-shadow: 0 5px 15px white;
 }
 .container:hover{
     border: white 10px solid;
@@ -213,6 +214,10 @@ h2{
 }
 .TextEtape h2{
     text-align: center;
+    color: white;
+}
+.container:hover .TextEtape h2{
+    color: black;
 }
 /* ############################################## */
 /* #                   TEXTE                    # */
@@ -223,10 +228,18 @@ p{
     text-indent: 5px; margin: 30px 0;
     text-align: justify;
     padding: 20px;
+    color: white;
+}
+#ModaliteEG p{
+    color: black;
 }
 #Synopsis p{
     text-align: center;
     font-size: 25px;
+    color: black;
+}
+.container:hover p{
+    color: black;
 }
 /* ############################################## */
 /* #                   MAIN                     # */
