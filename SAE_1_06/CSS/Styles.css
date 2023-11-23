@@ -1,0 +1,244 @@
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                  ANIMATION                    */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: white;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                 FONT-FAMILY                   */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+@font-face {
+    font-family: Playpen;
+    src: url("./Font/PlaypenSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url("./Font/Pacifico-Regular.ttf");
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                      HTML                     */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, white 0%, #e9d7f7 25%, #d3afef 51%, #c494e9 75%, #b579e4 100%);
+    animation: AnimateBG 10s ease infinite;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                   TITRE                       */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+h1 {
+    font-size: 6em;
+    color: black;
+    text-shadow: 0 0 10px white;
+    font-family: Pacifico, cursive;
+    width: auto;
+    height: auto;
+}
+#Titre article {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.TitrePrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                     MAIN                      */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+#Synopsis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                     TEXTE                     */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+p {
+    font-size: 2em;
+    color: black;
+    text-shadow: 0 0 10px white;
+    text-align: justify;
+}
+*{
+    font-family: Playpen, sans-serif;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                     LIEN                      */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #b579e4;
+}
+.BoiteRéseau a{
+    font-size: 30px;
+    text-align: center;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                   FOOTER                      */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 10px -5px 15px white;
+    text-align: center;
+    flex-direction: row;
+}
+.RéseauSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.BoiteRéseau{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                  SOMMAIRE                     */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+ul{
+    list-style-type: none;
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+
+}
+#SectionSommaire{
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+#Sommaire a{
+    font-size: 2.5em;
+    text-shadow: 0 0 10px white;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+#Sommaire a:hover {
+    color: black;
+    animation: 2s anim-popoutin ease infinite;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                    IMAGES                     */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+#Phone_Icon,#House_Icon{
+    width: auto;
+    height: auto;
+    max-height: 80px;
+    max-width: 80px;
+    min-width: 50px;
+    min-height: 50px;
+}
+.BoiteRéseau img{
+    width: auto;
+    height: auto;
+    max-height: 80px;
+    max-width: 80px;
+    min-width: 50px;
+    min-height: 50px;
+    align-self: center;
+    align-content: center;
+}
