@@ -1,0 +1,56 @@
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                    MAIN                       */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+#Pestel_E .container{
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #c494e9;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    justify-content: space-between;
+    align-items: center;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                   TITRE                       */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+h2 {
+    font-size: 3em;
+    color: black;
+    text-shadow: 0 0 10px white;
+    font-family: Pacifico, cursive;
+    width: auto;
+    height: auto;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                   IMAGES                      */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+.ImagePES img{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+/*                    TEXTE                      */
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+.TextPES{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
