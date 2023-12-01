@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="./CSS/Styles.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/ContactStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="Icon" href="./CSS/Images/Brain_Icon.png">
+</head>
+<body>
+<header>
+    <div id="navigationBar">
+        <div id="Navigation">
+            <nav>
+                <div class="menu">
+                    <div><a href="./Accueil.html">Acceuil</a>
+                        <div class="submenu">
+                            <div><a href="#Etape1">Intro</a></div>
+                            <div><a href="#Etape2">Sommaire</a></div>
+                            <div><a href="#Etape2">Réseau Sociaux</a></div>
+                        </div>
+                    </div>
+                    <div><a href="./PES.html">PES</a>
+                        <div class="submenu">
+                            <div><a href="./PES.html#Pestel_P">P</a></div>
+                            <div><a href="./PES.html#Pestel_E">E</a></div>
+                            <div><a href="./PES.html#Pestel_S">S</a></div>
+                        </div>
+                    </div>
+                    <div><a href="#footer">TEL</a></div>
+                    <div class="submenu">
+                        <div><a href="#Etape1">T</a></div>
+                        <div><a href="#Etape2">E</a></div>
+                        <div><a href="#Etape2">L</a></div>
+                    </div>
+                    <div><a href="./Contact.html">Contact</a></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="contact-container">
+        <!-- Section gauche avec les informations de contact et le formulaire -->
+        <div class="contact-left">
+            <h1>Contactez-nous</h1>
+            <img src="./CSS/Images/contactez_nous2.jpg" alt="Contactez-nous"> 
+        </div>
+        <!-- Section droite avec l'adresse et la carte Google Maps -->
+        <div class="contact-right">
+            <h2>Vous voulez nous joindre ?</h2>
+
+            <section>
+                <label for="nom">Nom *</label>
+                <input id="nom" name="Nom" type="text" pattern="[A-Za-zÀ-ÿ-]+" title="Veuillez rentrer un nom valide (lettres, tiret et accents)" required>
+
+                <label for="prenom">Prénom *</label>
+                <input id="prenom" name="Prénom" type="text" pattern="[A-Za-zÀ-ÿ-]+" title="Veuillez rentrer un prénom valide (lettres, tiret et accents)" required>
+
+                <label for="adr">Adresse email *</label>
+                <input id="adr" name="Adresse email" type="email" title="Veuillez saisir une adresse email valide" required>
+
+                <label for="codeP">Code Postal *</label>
+                <input id="codeP" name="Code Postal" type="text" pattern="[0-9]{5}" title="Veuillez saisir un code postal valide (5 chiffres)" required>
+
+                <label for="pays">Pays *</label>
+                <select id="pays" name="Pays" required size="5">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Afrique du Sud">Afrique du Sud</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Arabie Saoudite">Arabie Saoudite</option>
+                    <option value="Argentine">Argentine</option>
+                    <option value="Australie">Australie</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Bénin">Bénin</option>
+                    <option value="Brésil">Brésil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Chine">Chine</option>
+                    <option value="Corée du Sud">Corée du Sud</option>
+                    <option value="Égypte">Égypte</option>
+                    <option value="Émirats Arabes Unis">Émirats Arabes Unis</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="États-Unis">États-Unis</option>
+                    <option value="Éthiopie">Éthiopie</option>
+                    <option value="France">France</option>
+                    <option value="Inde">Inde</option>
+                    <option value="Indonésie">Indonésie</option>
+                    <option value="Irak">Irak</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Japon">Japon</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Malaisie">Malaisie</option>
+                    <option value="Mexique">Mexique</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Pays-Bas">Pays-Bas</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Pologne">Pologne</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Royaume-Uni">Royaume-Uni</option>
+                    <option value="Russie">Russie</option>
+                    <option value="Singapour">Singapour</option>
+                    <option value="Soudan">Soudan</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Suède">Suède</option>
+                    <option value="Suisse">Suisse</option>
+                    <option value="Taïwan">Taïwan</option>
+                    <option value="Tanzanie">Tanzanie</option>
+                    <option value="Thaïlande">Thaïlande</option>
+                    <option value="Turquie">Turquie</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Viêt Nam">Viêt Nam</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+
+                <label>Comment avez-vous entendu parlé de nous ? *</label>
+                <div>
+                    <input id="retrouve1" name="Retrouvé[]" type="checkbox" value="Amis">
+                    <label for="retrouve1">Amis</label>
+                </div>
+                <div>
+                    <input id="retrouve2" name="Retrouvé[]" type="checkbox" value="Internet">
+                    <label for="retrouve2">Internet</label>
+                </div>
+                <div>
+                    <input id="retrouve3" name="Retrouvé[]" type="checkbox" value="Réseaux sociaux">
+                    <label for="retrouve3">Réseaux sociaux</label>
+                </div>
+                <div>
+                    <input id="retrouve4" name="Retrouvé[]" type="checkbox" value="Publicité">
+                    <label for="retrouve4">Publicité</label>
+                </div>
+                <div>
+                    <input id="retrouve5" name="Retrouvé[]" type="checkbox" value="Bouche à oreille">
+                    <label for="retrouve5">Bouche à oreille</label>
+                </div>
+                <div>
+                    <input id="retrouve6" name="Retrouvé[]" type="checkbox" value="Événement">
+                    <label for="retrouve6">Événement</label>
+                </div>
+                <div>
+                    <input id="retrouve7" name="Retrouvé[]" type="checkbox" value="Autre site web">
+                    <label for="retrouve7">Autre site web</label>
+                </div>
+                <div>
+                    <input id="retrouve8" name="Retrouvé[]" type="checkbox" value="Presse">
+                    <label for="retrouve8">Presse</label>
+                </div>
+                <div>
+                    <input id="retrouve9" name="Retrouvé[]" type="checkbox" value="Forum en ligne">
+                    <label for="retrouve9">Forum en ligne</label>
+                </div>
+                <div>
+                    <input id="retrouve10" name="Retrouvé[]" type="checkbox" value="Autre">
+                    <label for="retrouve10">Autre</label>
+                    <details>
+                        <summary>Préciser</summary>
+                        <input id="autreOption" name="Autre option" type="text">
+                    </details>
+                </div>
+
+
+
+                <label for="date">Date à laquelle vous souhaitez être recontacté</label>
+                <input id="date" name="Date de recontact" type="date">
+
+                <label for="message">Votre message *</label>
+                <textarea id="message" name="Message" rows="4" cols="50" required></textarea>
+
+                <input type="submit" value="Envoyer">
+            </section>
+        </div>
+    </div>
+</main>
+</body>
+<a class="remonter" href="#Titre">↑</a>
+<footer>
+    <div class="RéseauSection">
+        <div class="BoiteRéseau">
+            <a href="#Titre"><img alt="Instagram_Icon" src="CSS/Images/Instagram_Icon.png">Instagram</a>
+            <a href="#Titre"><img alt="Facebook_Icon" src="CSS/Images/Facebook_Icon.png">Facebook</a>
+        </div>
+        <div class="BoiteRéseau">
+            <a href="#Titre"><img alt="Linkedln_Icon" src="CSS/Images/Linkedln_Icon.png">Linkedln</a>
+            <a href="#Titre"><img alt="Twitter_Icon" src="CSS/Images/twitter_Icon.png">Twitter</a>
+        </div>
+    </div>
+</footer>
+</html>
