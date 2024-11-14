@@ -13,28 +13,42 @@
     <div id="navigationBar">
         <div id="Navigation">
             <nav>
-                <div class="menu">
+                <div class="burger_menu"> 
+                    <input type="checkbox" id="menu-toggle" class="check-burger" />
+                    <label for="menu-toggle" class="check-burger" id="label-burger">
+                        <img alt="Burger_Icon" id="Burger_Icon" src="CSS/Images/burger_icon.png">
+                    </label>
+                    <div id="bg"></div>
+                    <div class="menu">
+                        <div><a href="./Accueil.html">Acceuil</a></div>
+                        <div><a href="./PES.html">PES</a></div>
+                        <div><a href="./TEL.html">TEL</a></div>
+                        <div><a href="./Contact.html">Contact</a></div>
+                    </div>
+                </div>
+                <div class="menu" id="menu_sans_burger">
                     <div><a href="./Accueil.html">Acceuil</a>
                         <div class="submenu">
                             <div><a href="#Etape1">Intro</a></div>
-                            <div><a href="#Etape2">Sommaire</a></div>
+                            <div><a href="#Etape2">Sommaire</a></div>   
                             <div><a href="#Etape2">Réseau Sociaux</a></div>
                         </div>
                     </div>
-                    <div><a href="#footer">PES</a>
+                    <div><a href="./PES.html">PES</a>
                         <div class="submenu">
-                            <div><a href="#Etape1">P</a></div>
-                            <div><a href="#Etape2">E</a></div>
-                            <div><a href="#Etape2">S</a></div>
+                            <div><a href="./PES.html#Pestel_P">Politique</a></div>
+                            <div><a href="./PES.html#Pestel_E">Economique</a></div>
+                            <div><a href="./PES.html#Pestel_S">Socioculturel</a></div>
                         </div>
                     </div>
-                    <div><a href="#footer">TEL</a></div>
-                    <div class="submenu">
-                        <div><a href="#Etape1">T</a></div>
-                        <div><a href="#Etape2">E</a></div>
-                        <div><a href="#Etape2">L</a></div>
+                    <div><a href="./TEL.html">TEL</a>
+                        <div class="submenu">
+                            <div><a href="./TEL.html#Pestel_T">Technologique</a></div>
+                            <div><a href="./TEL.html#Pestel_E">Environnemental</a></div>
+                            <div><a href="./TEL.html#Pestel_L">Légal</a></div>
+                        </div>
                     </div>
-                    <div><a href="./news.html">Contact</a></div>
+                    <div><a href="./Contact.html">Contact</a></div>
                 </div>
             </nav>
         </div>
